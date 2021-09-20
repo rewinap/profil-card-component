@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/* font-family: 'Kumbh Sans', sans-serif; */
+/* Attribution */
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+/* 
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px */
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --very-dark-cyan:hsl(229, 23%, 23%);
+    --dark-grayish-blue:hsl(227, 10%, 46%);
+    --dark-gray:hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--very-dark-cyan);
+}
+
+.top, .bottom{
+    position: absolute;
+}
+.top{
+    transform: translate(-35%,-55%);
+}
+.bottom{
+    bottom: 0;
+    right: 0;
+    transform: translate(40%,65%);
+}
+.main{
+    background-color: var(--dark-cyan);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border-radius:10px;
+}
+
+.upper-img{
+    width: 300px;
+    height: 150px;
+    background: url(./images/bg-pattern-card.svg);
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.victor img{
+    border-radius: 50%;
+    border: 5px solid hsl(0, 0%, 100%);
+    margin: -50px auto 20px auto;
+}
+
+
+.card-content .umur{
+    color: var(--dark-gray);
+}
+.card-content p{
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+}
+
+article{
+    border-top: 2px solid hsl(0, 0%, 90%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+article span{
+    display: block;
+    font-size: 13px;
+    color: var(--dark-gray);
+    letter-spacing: 1.7px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:706px) {
+    .top{
+        transform: translate(-70%,-55%);
+    }
+    .bottom{
+        transform: translate(70%,55%);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .bottom{
+        transform: translate(70%,75%);
+    }
+}
